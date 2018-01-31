@@ -5,8 +5,18 @@
 
 .nav-link{
   margin-right: 10px;
+  display: -webkit-flex;
+  display: flex;
 }
-.nav-link > span{
-  font-size: 20px;
+.nav-link > i{
+  font-size: 25px;
   margin-right: 5px;
+}
+
+/*MAIN*/
+.main{
+  margin-top: 40px;
+}
+.elements-list{
+  margin-top: 20px;
 }
