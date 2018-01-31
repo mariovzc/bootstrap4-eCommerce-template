@@ -37,6 +37,28 @@ const elements = [
   }
 ]
 
+const cardsElements = [
+  {
+    title: 'Hipster Ultimate',
+    description: 'La camiseta para los hipsters'
+  },
+  {
+    title: 'One Motion Live',
+    description: 'Perfecta para salidas rocosas'
+  },
+  {
+    title: 'Underground Max',
+    description: 'otra camiseta mas para probar'
+  },
+  {
+    title: 'Max Underground',
+    description: 'soy un texto de relleno nueva'
+  },
+  {
+    title: 'Live Motion One',
+    description: 'estoy probando ahora otra mas'
+  }
+]
 function displayCategoriesList (categories) {
   let html = ''
   categories.forEach((category, index) => {
@@ -50,4 +72,26 @@ function displayCategoriesList (categories) {
   })  
   document.getElementById('elements').innerHTML = html
 }
+
+function displayCards (cards) {
+  let html = ''
+  cards.forEach((card, index) => {
+    html += `
+    <div class="col-sm-6 col-md-4 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-${index + 1}.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">${card.title}</h5>
+          <p class="card-text">${card.description}</p>
+          <a href="#" class="btn btn-primary">price</a>
+          <a href="#" class="btn btn-outline-secondary">Detalles</a>
+        </div>
+      </div>
+    </div>
+    `
+  })
+  document.getElementById('cards').innerHTML = html
+}
+
 displayCategoriesList(elements)
+displayCards(cardsElements)
