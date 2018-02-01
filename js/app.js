@@ -77,14 +77,16 @@ function displayCards (cards) {
   let html = ''
   cards.forEach((card, index) => {
     html += `
-    <div class="col-sm-6 col-md-4 col-lg-4">
+    <div class="col-6 col-md-4 col-lg-4">
       <div class="card">
         <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-${index + 1}.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${card.title}</h5>
           <p class="card-text">${card.description}</p>
-          <a href="#" class="btn btn-primary">price</a>
-          <a href="#" class="btn btn-outline-secondary">Detalles</a>
+          <div class="card-actions">
+            <button class="btn btn-primary btn-sm buy-btn"><span>$299</span><i class="material-icons custom-icon">shopping_cart</i></button>
+            <button class="btn btn-outline-secondary btn-sm">Detalles</button>
+          </div>
         </div>
       </div>
     </div>

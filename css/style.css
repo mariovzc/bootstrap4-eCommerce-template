@@ -17,9 +17,24 @@
 .main{
   margin-top: 40px;
 }
+.search-bar{
+  margin-bottom: 40px;
+}
 .elements-list{
-  margin-top: 20px;
+  margin-top: 50px;
 }
 #cards{
   margin-top: 20px;
+}
+.card-actions{
+  display: flex;
+  display: -webkit-flex;
+}
+.card-actions button{
+  margin-right: 5px;
+}
+.buy-btn i{
+  font-size: 18px;
+  vertical-align: bottom;
+  margin-left: 2px;
 }
