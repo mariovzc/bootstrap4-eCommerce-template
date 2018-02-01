@@ -38,3 +38,12 @@
   vertical-align: bottom;
   margin-left: 2px;
 }
+.modal-icon {
+  vertical-align: middle;
+}
+.modal-tabs{
+  margin-top: 20px;
+}
+.modal-text-area{
+  margin-top: 10px;
+}

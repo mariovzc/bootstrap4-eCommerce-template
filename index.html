@@ -79,6 +79,80 @@
     </div>
 
     <!--MODAL -->
+    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hipster Ultimate</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-primary" role="alert">
+                <i class="material-icons modal-icon">info</i> <span>Este producto está agotado</span>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                  <img class="img-thumbnail" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="First slide">
+              </div>
+              <div class="col-7">
+                <p>Precio <strong>299</strong></p>
+                <p>
+                  Calificación: 
+                  <i class="material-icons modal-icon">star</i>
+                  <i class="material-icons modal-icon">star</i>
+                  <i class="material-icons modal-icon">star</i>
+                  <i class="material-icons modal-icon">star</i>
+                  <i class="material-icons modal-icon">star_border</i>
+                </p>
+                <p>
+                  <span class="badge badge-pill badge-warning">Hipster</span>
+                  <span class="badge badge-pill badge-secondary">Deportiva</span>
+                </p>
+                <p><a href="javascript:void(0)"><i class="material-icons modal-icon">favorite</i> Agregar a los deseos</a></p>
+              </div>
+            </div>
+            <div class="modal-tabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="desc-tab" data-toggle="tab" href="#desc" role="tab" aria-controls="desc" aria-selected="true">Descripción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="coments-tab" data-toggle="tab" href="#coments" role="tab" aria-controls="coments" aria-selected="false">Comentarios</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="desc" role="tabpanel" aria-labelledby="desc-tab">
+                  <p class="p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam distinctio libero sunt, non explicabo quos labore nobis alias odit vel facilis nulla omnis porro quaerat exercitationem quisquam assumenda tenetur!
+                  </p>
+                </div>
+                <div class="tab-pane fade" id="coments" role="tabpanel" aria-labelledby="coments-tab">
+                  <div class="p-3">
+                    <div class="card">
+                      <div class="card-header">
+                        Germán Escobar comentó hace dos días
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Esta camiseta está increíble la quiero!</p>
+                      </div>
+                    </div>
+                    <div class="form-group modal-text-area">
+                      <textarea class="form-control" placeholder="ingresa tu comentario" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--MODAL -->
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

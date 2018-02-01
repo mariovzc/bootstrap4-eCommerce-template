@@ -85,7 +85,7 @@ function displayCards (cards) {
           <p class="card-text">${card.description}</p>
           <div class="card-actions">
             <button class="btn btn-primary btn-sm buy-btn"><span>$299</span><i class="material-icons custom-icon">shopping_cart</i></button>
-            <button class="btn btn-outline-secondary btn-sm">Detalles</button>
+            <button class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#detailsModal">Detalles</button>
           </div>
         </div>
       </div>
